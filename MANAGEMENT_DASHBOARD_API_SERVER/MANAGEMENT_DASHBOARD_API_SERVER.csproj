@@ -230,6 +230,12 @@
     <Compile Include="Controllers\Report_Branch_Ranking\GENERAL_MOTOR_PERF_BRMONTHController.cs" />
     <Compile Include="Controllers\Report_Branch_Ranking\GENERAL_NMOTOR_PERF_BRCMLTVController.cs" />
     <Compile Include="Controllers\Report_Branch_Ranking\GENERAL_NMOTOR_PERF_BRMONTHController.cs" />
+    <Compile Include="Controllers\Report_Branch_Ranking_Region_Wise\GENERAL_GENERAL_PERF_RGBRCMLTVContoller.cs" />
+    <Compile Include="Controllers\Report_Branch_Ranking_Region_Wise\GENERAL_GENERAL_PERF_RGBRMONTHController.cs" />
+    <Compile Include="Controllers\Report_Branch_Ranking_Region_Wise\GENERAL_MOTOR_PERF_RGBRCMLTVController.cs" />
+    <Compile Include="Controllers\Report_Branch_Ranking_Region_Wise\GENERAL_MOTOR_PERF_RGBRMONTHController.cs" />
+    <Compile Include="Controllers\Report_Branch_Ranking_Region_Wise\GENERAL_NMOTOR_PERF_RGBRCMLTVController.cs" />
+    <Compile Include="Controllers\Report_Branch_Ranking_Region_Wise\GENERAL_NMOTOR_PERF_RGBRMONTHController.cs" />
     <Compile Include="Controllers\Report_Channel\GENERAL_CH_CONTRIBUT_CUMULATVController.cs" />
     <Compile Include="Controllers\Report_Channel\GENERAL_CH_CONTRIBUT_MONTHController.cs" />
     <Compile Include="Controllers\Report_Channel\GENERAL_CH_MONTH_WISE_CONTRIController.cs" />
@@ -290,6 +296,12 @@
     <Compile Include="Repositories\Report_Branch_Ranking\GENERAL_MOTOR_PERF_BRMONTH_Repository.cs" />
     <Compile Include="Repositories\Report_Branch_Ranking\GENERAL_NMOTOR_PERF_BRCMLTV_Repository.cs" />
     <Compile Include="Repositories\Report_Branch_Ranking\GENERAL_NMOTOR_PERF_BRMONTH_Repository.cs" />
+    <Compile Include="Repositories\Report_Branch_Ranking_Region_Wise\GENERAL_GENERAL_PERF_RGBRCMLTV_Repository.cs" />
+    <Compile Include="Repositories\Report_Branch_Ranking_Region_Wise\GENERAL_GENERAL_PERF_RGBRMONTH_Repository.cs" />
+    <Compile Include="Repositories\Report_Branch_Ranking_Region_Wise\GENERAL_MOTOR_PERF_RGBRCMLTV_Repository.cs" />
+    <Compile Include="Repositories\Report_Branch_Ranking_Region_Wise\GENERAL_MOTOR_PERF_RGBRMONTH_Repository.cs" />
+    <Compile Include="Repositories\Report_Branch_Ranking_Region_Wise\GENERAL_NMOTOR_PERF_RGBRCMLTV_Repository.cs" />
+    <Compile Include="Repositories\Report_Branch_Ranking_Region_Wise\GENERAL_NMOTOR_PERF_RGBRMONTH_Repository.cs" />
     <Compile Include="Repositories\Report_Channel\GENERAL_CH_CONTRIBUT_CUMULATV_Repository.cs" />
     <Compile Include="Repositories\Report_Channel\GENERAL_CH_CONTRIBUT_MONTH_Repository.cs" />
     <Compile Include="Repositories\Report_Channel\GENERAL_CH_MONTH_WISE_CONTRI_Repository.cs" />
@@ -379,8 +391,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\Report_Branch_Ranking_Region_Wise\" />
-    <Folder Include="Repositories\Report_Branch_Ranking_Region_Wise\" />
     <Folder Include="Views\Login\" />
   </ItemGroup>
   <ItemGroup>

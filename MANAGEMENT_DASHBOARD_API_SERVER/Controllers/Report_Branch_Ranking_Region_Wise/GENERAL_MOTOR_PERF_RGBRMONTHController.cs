@@ -1,0 +1,39 @@
+﻿using MANAGEMENT_DASHBOARD_API_SERVER.Repositories.Report_Branch_Ranking_Region_Wise;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Http;
+using System.Configuration;
+
+namespace MANAGEMENT_DASHBOARD_API_SERVER.Controllers.Report_Branch_Ranking_Region_Wise
+{
+    public class GENERAL_MOTOR_PERF_RGBRMONTHController : ApiController
+    {
+        public readonly GENERAL_MOTOR_PERF_RGBRMONTH_Repository _repository;
+        public GENERAL_MOTOR_PERF_RGBRMONTHController()
+        {
+            // Initialize the repository with the connection string to Oracle database
+            var connectionString = ConfigurationManager.ConnectionStrings["dbCon"].ConnectionString;
+            _repository = new GENERAL_MOTOR_PERF_RGBRMONTH_Repository(connectionString);
+        }
+
+        // GET: GENERAL_MOTOR_PERF_RGBRMONTH
+        public IHttpActionResult Get(int month, string region)
+        {
+            try
+            {
+                // Call the repository method to get the data
+                var data = _repository.CallStoredProcedure(month, region);
+
+                // Return the data as a JSON response
+                return Ok(data);
+            }
+            catch (Exception ex)
+            {
+                // Log the error (implement logging as needed) and return a 500 Internal Server Error response
+                return InternalServerError(ex);
+            }
+        }
+    }
+}
